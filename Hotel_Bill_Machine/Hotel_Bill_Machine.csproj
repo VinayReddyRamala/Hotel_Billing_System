@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9252971-1CEE-4C69-98DF-3663555AEE97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel_Bill_Machine</RootNamespace>
+    <AssemblyName>Hotel_Bill_Machine</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Item.Designer.cs">
+      <DependentUpon>Add Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add New User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New User.Designer.cs">
+      <DependentUpon>Add New User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill Master.Designer.cs">
+      <DependentUpon>Bill Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill Trans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill Trans.Designer.cs">
+      <DependentUpon>Bill Trans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillNumber.cs" />
+    <Compile Include="Change Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.cs">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Item.Designer.cs">
+      <DependentUpon>Delete Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Item.Designer.cs">
+      <DependentUpon>Edit Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs" />
+    <Compile Include="MDI Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Form.Designer.cs">
+      <DependentUpon>MDI Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Bill.Designer.cs">
+      <DependentUpon>View Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View User.Designer.cs">
+      <DependentUpon>View User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Item.resx">
+      <DependentUpon>Add Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add New User.resx">
+      <DependentUpon>Add New User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill Master.resx">
+      <DependentUpon>Bill Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill Trans.resx">
+      <DependentUpon>Bill Trans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Item.resx">
+      <DependentUpon>Delete Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Item.resx">
+      <DependentUpon>Edit Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Form.resx">
+      <DependentUpon>MDI Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View Bill.resx">
+      <DependentUpon>View Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View User.resx">
+      <DependentUpon>View User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buffet image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
